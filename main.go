@@ -30,8 +30,8 @@ func (ch *Cache) Delete(key string) {
 	delete(ch.data, key)
 }
 
-func NewCache() Cache {
-	return Cache{
+func NewCache() *Cache {
+	return &Cache{
 		data: make(map[string]interface{}),
 		mx:   sync.RWMutex{},
 	}
