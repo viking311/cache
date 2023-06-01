@@ -19,7 +19,7 @@ The cache instanse provide next methods:
 ## Example of usage
 ~~~~
 cache := cache.NewCache()
-cache.Set("key1", "value1")
+cache.Set("key1", "value1", 2 * time.Second)
 fmt.Println(cache.Get("key1"))
 cache.Delete("key1")
 ~~~~
