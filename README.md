@@ -12,7 +12,7 @@ go get github.com/viking311/cache
 To create new cache instance you need to call the method NewCache().
 The cache instanse provide next methods:
 
-- Set(key string, value interface{})
+- Set(key string, value interface{}, ttl time.Duration)
 - Get(key string) interface{}
 - Delete(key string)
 
